@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/public.css"/>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/js.js"></script>
+	</head>
+	<body>
+		<!------- top---------------------------->
+		<div id="top_wrap">
+			<div id="top">
+				<ul class="top_left" >
+					<li><a href="#" class="a1" >小米商城</a></li>
+					<li><a href="#">MUIU</a></li>
+					<li><a href="#">loT</a></li>
+					<li><a href="#">云服务</a></li>
+					<li><a href="#">水滴</a></li>
+					<li><a href="#">金融</a></li>
+					<li><a href="#">有品</a></li>
+					<li><a href="#" class="a2">Select Region</a></li>
+				</ul>
+				<ul class="top_right">
+					<li><a href="#" class="center">登录</a></li>
+					<li><a href="#" class="register">注册</a></li>
+					<li><a href="#">消息通知</a></li>
+					<li class="li1" ><a href="#"><b class="b1"></b>购物车(<span>0</span>)</a></li>
+				</ul>
+				<script type="text/javascript">
+					$('#top .top_right .center ').click(function(){
+						location.href ="enter.html"
+					})
+					$('#top .top_right .register ').click(function(){
+						location.href ="register .html"
+					})
+				</script>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#top li a').each(function(){
+				$(this).mouseenter(function(){
+					$(this).css('color','white')
+				})
+				$(this).mouseleave(function(){
+					$(this).css('color','#b0b0b0')
+				})
+			})
+		</script>
+		<!----- nav-------------------------->
+		<div id="nav">
+			<div id="logo">
+				<a href="#"></a>
+			</div>
+			<ul id="ul">
+				<li><a href="#" class="a5">小米手机</a></li>
+				<li><a href="#" >红米手机</a></li>
+				<li><a href="#">笔记本</a></li>
+				<li><a href="#">电视</a></li>
+				<li><a href="#">盒子</a></li>
+				<li><a href="#">新品</a></li>
+				<li><a href="#">路由器</a></li>
+				<li><a href="#">智能硬件</a></li>
+				<li><a href="#">服务</a></li>
+				<li><a href="#">社区</a></li>
+			</ul>
+			<form>
+				<input type="text" name="" id="inp" value="" />
+				<a href="" class="a4">&#xe651;</a>
+				<div class="form_a">
+					<a href="#">小米8</a>
+					<a href="#">小米MIX 2S</a>
+				</div>
+				<ul>
+					<li><a href="">小米6X</a><span>约有6件</span></li>
+					<li><a href="">小米MIX2S</a><span>约有5件</span></li>
+					<li><a href="">黑鲨游戏手机</a><span>约有3件</span></li>
+					<li><a href="">红米Note5</a><span>约有6件</span></li>
+					<li><a href="">红米5A</a><span>约有7件</span></li>
+					<li><a href="">小米电视4C</a><span>约有5件</span></li>
+					<li><a href="">电视32英寸</a><span>约有13件</span></li>
+					<li><a href="">笔记本Pro</a><span>约有5件</span></li>
+					<li><a href="">空气净化器</a><span>约有11件</span></li>
+					<li><a href="">净水器</a><span>约有8件</span></li>
+				</ul>
+			</form>
+			<script type="text/javascript">
+				$('.form_a a').mouseenter(function(){
+					$(this).css('background','red')
+				})
+				$('.form_a a').mouseleave(function(){
+					$(this).css('background','#CCCCCC')
+				})
+				$('.a4').mouseenter(function(){
+					$(this).css({'background':"red","color":"white"})
+				})
+				$('.a4').mouseleave(function(){
+					$(this).css({'background':"","color":"#616161"})
+				})
+				$('#inp').focus(function(){
+					$('form ul').css("display","block")
+					$('form ul li').mouseenter(function(){
+						$(this).css('background',"#CCCCCC")
+					})
+					$('form ul li').mouseleave(function(){
+						$(this).css('background',"")
+					})
+					$('#inp').css('border-color','red')
+					$('.a4').css('border-color','red')
+					$('.form_a').css({'display':'none'})
+				})
+				$('#inp').blur(function(){
+					
+					$('form ul').css("display","none")
+					$('form ul li').mouseenter(function(){
+						$(this).css('background',"#CCCCCC")
+					})
+					$('form ul li').mouseleave(function(){
+						$(this).css('background',"")
+					})
+					$('#inp').css('border-color','#e0e0e0')
+					$('.a4').css('border-color','#e0e0e0')
+					$('.form_a').css({'display':'block'})
+				})
+			</script>
+			<div class="nav_enter">
+				<div class="nav_enter1">
+					<a href="#">
+						<img src="images/nav01.png"/>
+					</a>
+					<p><a href="#">小米8 青春版</a></p>
+					<p>1399起</p>
+				</div>
+				<div class="nav_enter1">
+					<a href="#">
+						<img src="images/nav01.png"/>
+					</a>
+					<p><a href="#">小米8 青春版</a></p>
+					<p>1399起</p>
+				</div>
+				<div class="nav_enter1">
+					<a href="#">
+						<img src="images/nav01.png"/>
+					</a>
+					<p><a href="#">小米8 青春版</a></p>
+					<p>1399起</p>
+				</div>
+				<div class="nav_enter1">
+					<a href="#">
+						<img src="images/nav01.png"/>
+					</a>
+					<p><a href="#">小米8 青春版</a></p>
+					<p>1399起</p>
+				</div>
+				<div class="nav_enter1">
+					<a href="#">
+						<img src="images/nav01.png"/>
+					</a>
+					<p><a href="#">小米8 青春版</a></p>
+					<p>1399起</p>
+				</div>
+				<div class="nav_enter1" >
+					<a href="#">
+						<img src="images/nav01.png" style="border: 0;"/>
+					</a>
+					<p><a href="#">小米8 青春版</a></p>
+					<p>1399起</p>
+				</div>
+			</div>
+		</div>
+	    <script type="text/javascript">
+	    	
+	    		var $a = $("#ul li a")
+	    		$("#ul li a").each(function() {
+	    			 $a.mouseenter(function(){
+	    	     	 $(this).css("color","red")
+	    	     	 $('.a5').mouseenter(function(){
+	    	     	 	 $(".nav_enter").css("display",'block')
+		    	         })
+	    	     	
+	    	     	})	
+	    	         $a.mouseleave(function(){
+	    	     	 $(this).css('color',"black")
+	    	     	 $('.a5').mouseleave(function(){    
+	    	     	     $('.nav_enter').css('display','none')
+	    	     	      })
+	    	         })
+	    	         $('.nav_enter').mouseenter(function(){
+	    	         $('.nav_enter').css('display','block')
+	    	         })
+	    	         $('.nav_enter').mouseleave(function(){
+	    	     	 $('.nav_enter').css('display','none')
+	    	         })
+	    		});
+	    </script>
+		<!----------banner--------->
+		<div id="banner">
+			<div class="left">
+				<ul class="Ul">
+					<li>
+						<a href="#">手机</a>
+						<a href="#">电话卡</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">笔记本</a>
+						
+						<span></span>
+					</li>
+					<li>
+						<a href="#">电视</a>
+						<a href="#">盒子</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">路由器</a>
+						<a href="#">智能硬件</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">移动电源</a>
+						<a href="#">电池</a>
+						<a href="#">插线板</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">耳机</a>
+						<a href="#">音响</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">保护套</a>
+						<a href="#">贴膜</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">线材</a>
+						<a href="#">支架</a>
+						<a href="#">存储卡</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">箱包</a>
+						<a href="#">服饰</a>
+						<a href="#">鞋</a>
+						<a href="#">眼镜</a>
+						<span></span>
+					</li>
+					<li>
+						<a href="#">米兔</a>
+						<a href="#">生活周边</a>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+			<div class="center">
+				<ul>
+					<li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				</ul>
+				<ul class="ul1">
+					<li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    
+				</ul>
+				<ul>
+					<li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				</ul>
+				<ul class="ul1">
+					<li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    
+				</ul>
+				<ul>
+					<li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				</ul>
+				<ul class="ul1">
+					<li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    
+				</ul>
+				<ul>
+					<li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				</ul>
+				<ul class="ul1">
+					<li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn5.jpg"/>小米8 青春版 </a></li>
+				</ul>
+				<ul class="ul1">
+					<li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn2.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn1.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn4.jpg"/>小米8 青春版 </a></li>
+				    <li><a href="#"><img src="images/bn3.jpg"/>小米8 青春版 </a></li>
+				    
+				</ul>
+			</div>
+			<script type="text/javascript">
+			 $('.Ul li').mouseenter(function(){
+			 	$(this).css('background','red')
+			 })
+			 $('.Ul li').mouseleave(function(){
+			 	$(this).css('background','#540909')
+			 })
+			 $('.Ul li').each(function(){
+			 	$(this).mouseenter(function(){
+			 		var i = $(this).index()
+			 		$('.center ul ').eq(i).css('display','block')
+			 		$('.center ul ').mouseenter(function(){
+			 			$(this).css('display','block')
+			 		})
+			 	})
+			 })
+			  $('.Ul li').each(function(){
+			 	$(this).mouseleave(function(){
+			 		var i = $(this).index()
+			 		$('.center ul ').eq(i).css('display','none')
+			 		$('.center ul').mouseleave(function(){
+			 			$(this).css('display','none')
+			 		})
+			 	})
+			 })
+				
+			</script>
+			<div class="right" id="slider1">
+				<ul>
+				<li><a href="http://www.1000phone.com"><img src="images/bn01.jpg" /></a></li>
+				<li><a href="http://www.1000phone.com"><img src="images/bn02 .jpg"/></a></li>
+				<li><a href="http://www.1000phone.com"><img src="images/bn03.jpg" /></a></li>
+				<li><a href="http://www.1000phone.com"><img src="images/bn04.jpg" /></a></li>
+				<li><a href="http://www.1000phone.com"><img src="images/bn05.jpg" /></a></li>
+			</ul>
+				
+			</div>
+		</div> 
+		<!----------main1------------------->
+		<div id="main1">
+			<div class="main_one">
+				<div class="list1">
+					<figure>
+						 <a href="#">&#xe621;</a>
+						<figcaption>
+							<a href="#">
+								选购手机
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="list2">
+					<figure>
+						<a href="#">&#xe643;</a>
+						<figcaption>
+							<a href="#">
+								企业团购
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="list3">
+					<figure>
+						<a href="#">&#xe605;</a>
+						<figcaption>
+							<a href="#">
+								F码通道
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="list4">
+					<figure>
+						<a href="#">&#xe609;</a>
+						<figcaption>
+							<a href="#">
+								以旧换新
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="list5">
+					<figure>
+						<a href="#">&#xe611;</a>
+						<figcaption>
+							<a href="#">
+								米粉卡
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="list6">
+					<figure>
+						<a href="#">&#xe647;</a>
+						<figcaption>
+							<a href="#">
+								话费充值
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$('.main_one a').mouseenter(function(){
+					$(this).css('color','white')
+				})
+				$('.main_one a').mouseleave(function(){
+					$(this).css('color','#cdcac8')
+				})
+			</script>
+			<div id="main_two" >
+				<a href="#">
+					<img src="images/main1.jpg"/>
+				</a>
+			</div>
+			<div id="main_three" >
+				<a href="#">
+					<img src="images/main2.jpg"/>
+				</a>
+			</div>
+			<div id="main_four" >
+				<a href="#">
+					<img src="images/main3.jpg"/>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#main1 img').mouseenter(function(){
+				$(this).css({'margin-top':'-3px','box-shadow':'5px 5px 5px #CCCCCC ,-5px -5px 5px #CCCCCC,5px -5px 5px #CCCCCC,-5px 5px 5px #CCCCCC'})
+			})
+			$('#main1 img').mouseleave(function(){
+				$(this).css({'margin-top':'0','box-shadow':'0 0 0 '})
+			})
+		</script>
+		<!----------main2-------------->
+		<div id="main2">
+			<h3>
+				<span>小米明星单品 </span>
+				<a href="#">&gt;</a>
+				<a href="#">&lt;</a>
+			</h3>
+			<div class="main2_one">
+				<dt>新品</dt>
+				<a href="#"><img src="images/m_03.jpg" /></a>
+				<p><a href="#">小米MIX2</a></p>
+				<p><a href="#" class="te">全面屏2.0，5.99"大屏</a></p>
+				<h2>3299元起</h2>
+			</div>
+			<div class="main2_two">
+				<a href="#"><img src="images/m_05.jpg" /></a>
+				<p><a href="#">红米5A</a></p>
+				<p><a href="#" class="te">8天超长待机，137g轻巧机身</a></p>
+				<h2>599元</h2元>
+			</div>
+			<div class="main2_three">
+				<dt>限时</dt>
+				<a href="#"><img src="images/m_07.jpg" /></a>
+				<p><a href="#">小米6</a></p>
+				<p><a href="#" class="te">变焦双摄，4轴防抖</a></p>
+				<h2>2299元起</h2>
+			</div>
+			<div class="main2_four">
+				<a href="#"><img src="images/m_09.jpg" /></a>
+				<p><a href="#">小米电视4A 43英寸 标准版</a></p>
+				<p><a href="#" class="te">全高清HDR 四核高性能处理器</a></p>
+				<h2>1999元</h2>
+			</div>
+			<div class="main2_five">
+				<a href="#"><img src="images/m_11.jpg" /></a>
+				<p><a href="#">小米笔记本</a></p>
+				<p><a href="#" class="te">更轻更薄，像杂志一样随身携带</a></p>
+				<h2>3599元起</h2>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('.main2_five,.main2_four,.main2_three,.main2_two,.main2_one').mouseenter(function(){
+				$(this).css({'margin-top':'-3px','box-shadow':'5px 5px 5px #CCCCCC ,-5px -5px 5px #CCCCCC,5px -5px 5px #CCCCCC,-5px 5px 5px #CCCCCC'})
+			})
+			$('.main2_five,.main2_four,.main2_three,.main2_two,.main2_one').mouseleave(function(){
+				$(this).css({'margin-top':'0','box-shadow':'0 0 0 '})
+			})
+		</script>
+		<div id="main3_wrap">
+			<div id="main3">
+				<div class="main3_z">
+					<a href="#">家电</a>
+					<div class="main3_r">
+						<a href="#">热门</a>
+						<a href="#">电视影音</a>
+						<a href="#">电脑</a>
+						<a href="#">家电</a>
+					</div>
+				</div>
+				<div class="main3_one">
+					<a href="#">
+						<img src="images/f_16.jpg" />
+					</a>
+				</div>
+				<div class="main3_two">
+					<a href="#"><img src="images/f_03.jpg" /></a>
+					<p><a href="#">小米电视4C 55英寸</a></p>
+					<p><a href="#" class="te">4K HDR 人工智能电视</a></p>
+				    <h2>2899元</h2元>
+			    </div>
+			    <div class="main3_three">
+					<a href="#"><img src="images/f_05.jpg" /></a>
+					<p><a href="#">小米电视4A 49英寸 标准版</a></p>
+					<p><a href="#" class="te">2GB+8GB 大储存/全高清HDR</a></p>
+				    <h2>2199元</h2元>
+			    </div>
+			    <div class="main3_four">
+					<a href="#"><img src="images/f_07.jpg" /></a>
+					<p><a href="#">13.3"小米笔记本Air i5 8G 256G...</a></p>
+				    <h2>5199元</h2元>
+			    </div>
+			    <div class="main3_five">
+					<a href="#"><img src="images/f_09.jpg" /></a>
+					<p><a href="#">15.6"小米笔记本Pro i7 16G MX...</a></p>
+				    <h2>6999元</h2元>
+			    </div>
+			    <div class="main3_six">
+					<a href="#">
+						<img src="images/f_19.jpg" />
+					</a>
+				</div>
+				<div class="main3_seven">
+					<a href="#"><img src="images/f_21.jpg" /></a>
+					<p><a href="#">米家压力IH电饭锅</a></p>
+					<p><a href="#" class="te">智能烹饪，灰铸铁粉体涂层内丹</a></p>
+				    <h2>999元</h2元>
+			    </div>
+			    <div class="main3_eight">
+					<a href="#"><img src="images/f_24.jpg" /></a>
+					<p><a href="#">米家电水壶</a></p>
+					<p><a href="#" class="te">一杯水，是一家人的安心</a></p>
+				    <h2>99元</h2元>
+			    </div>
+			    <div class="main3_nine">
+					<a href="#"><img src="images/f_27.jpg" /></a>
+					<p><a href="#">小米米家空气净化器 2S</a></p>
+				    <h2>799元</h2元>
+			    </div>
+			    <div class="main3_ten">
+			    	<div class="small">
+			    		<p><a href="#">小白摄像机</a></p>
+					    <h2>379元</h2元>
+			    	</div>
+				    <a href="#"><img src="images/f_30.jpg" /></a>
+			    </div>
+			     <div class="main3_eleven">
+			    	<div class="small">
+			    		<p><a href="#">浏览更多</a></p>
+					    <h2>热门</h2元>
+			    	</div>
+				    <a href="#"><img src="images/f_37.jpg" /></a>
+			    </div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#main3 div[class^=main3]:not(.main3_z,.main3_r)').mouseenter(function(){
+				$(this).css({'margin-top':'-3px','box-shadow':'5px 5px 5px #CCCCCC ,-5px -5px 5px #CCCCCC,5px -5px 5px #CCCCCC,-5px 5px 5px #CCCCCC'})
+			})
+			$('#main3 div[class^=main3]:not(.main3_z,.main3_r)').mouseleave(function(){
+				$(this).css({'margin-top':'0','box-shadow':'0 0 0'})
+			})
+		</script>
+		<!-------------main4-------------->
+		<div id="main4_wrap">
+			<div id="main4">
+				<p>
+					<a href="#" class="fis">手机</a>
+					<a href="#" class="las">查看全部 <span>&gt;</span></a>
+				</p>
+				<div class="main4_one">
+					<a href="#"><img src="images/sj.jpg"/></a>
+				</div>
+				<div class="main4_two">
+					<div class="main4_three">
+			    			<a href="#"> 一如既往的好，小米情怀   </a>
+			    			<br />
+			    			<a href="#">来自 惊喜的 评价</a>
+			        </div>
+					<li>新品</li>
+					<a href="#"><img src="images/sj01.jpg" /></a>
+					<p><a href="#">小米8 青春版 4GB+64GB</a></p>
+					<p><a href="#" class="te">潮流镜面渐变色，2400万自拍旗舰</a></p>
+				    <h2>1399元</h2元>
+			    </div>
+			   
+			    <div class="main4_two">
+			    	<div class="main4_three">
+			    			<a href="#"> 手机太好，良心之作</a>
+			    			<br />
+			    			<a href="#">来自 小黑的 评价</a>
+			        </div>
+			    	<li>新品</li>
+					<a href="#"><img src="images/sj02.jpg" /></a>
+					<p><a href="#">小米8 屏幕指纹版 8GB+128GB</a></p>
+					<p><a href="#" class="te">全球首款圧感屏幕指纹，双屏GPS...</a></p>
+				    <h2>3599元</h2元>
+			    </div>
+			    <div class="main4_two">
+			    	<div class="main4_three">
+			    			<a href="#"> 小米的手机还是这么的秀</a>
+			    			<br />
+			    			<a href="#">来自 向海的 评价</a>
+			        </div>
+			    	<dt>减100元</dt>
+					<a href="#"><img src="images/sj03.jpg" /></a>
+					<p><a href="#">小米8 SE 4GB+64GB</a></p>
+					<p><a href="#" class="te">AI 超感光双摄，三星AMOLED屏幕</a></p>
+				    <h2>1699元<span>1799元</span></h2元>
+			    </div>
+			     <div class="main4_two" style="margin-right: 0;">
+			     	<div class="main4_three">
+			    			<a href="#"> 性价比真高，友商的旗舰可以洗洗睡了</a>
+			    			<br />
+			    			<a href="#">来自 二哈的 评价</a>
+			        </div>
+					<a href="#"><img src="images/sj04.jpg" /></a>
+					<p><a href="#">小米6X 4GB+64GB</a></p>
+					<p><a href="#" class="te">全索尼相机，骁龙660AIE处理器</a></p>
+				    <h2>1199元</h2元>
+			    </div>
+			     <div class="main4_two">
+			     	<div class="main4_three">
+			    			<a href="#"> 请问小米公司的设计师都是吃白饭的吗！</a>
+			    			<br />
+			    			<a href="#">来自 碰瓷的 评价</a>
+			        </div>
+			     	<dt>享8折</dt>
+					<a href="#"><img src="images/sj05.jpg" /></a>
+					<p><a href="#">小米Max 2 4GB+64GB</a></p>
+					<p><a href="#" class="te">6.44"大屏，5300mAh充电宝级的大</a></p>
+				    <h2>1199元<span>1499元</span></h2元>
+			    </div>
+			    <div class="main4_two">
+			    	<div class="main4_three">
+			    			<a href="#"> 等等，我只想知道照片中的妹纸是谁？</a>
+			    			<br />
+			    			<a href="#">来自 汪汪的 评价</a>
+			        </div>
+			    	<dt>享6折</dt>
+					<a href="#"><img src="images/sj06.jpg" /></a>
+					<p><a href="#">小米MIX 2 全陶瓷尊享版</a></p>
+					<p><a href="#" class="te">全面屏2.0，Unibody全陶瓷</a></p>
+				    <h2>2699元<span>4699元</span></h2元>
+			    </div>
+			    <div class="main4_two">
+			    	<div class="main4_three">
+			    			<a href="#">小米手机确实不错</a>
+			    			<br />
+			    			<a href="#">来自 反讽者的 评价</a>
+			        </div>
+					<a href="#"><img src="images/sj05.jpg" /></a>
+					<p><a href="#">红米s2 3GB+32GB</a></p>
+					<p><a href="#" class="te">前置1600万超大像素智能美拍</a></p>
+				    <h2>999元</h2元>
+			    </div>
+			    <div class="main4_two" style="margin-right: 0;">
+			    	<div class="main4_three">
+			    			<a href="#">上面的都不是我说的</a>
+			    			<br />
+			    			<a href="#">来自 内心深处的 评价</a>
+			        </div>
+			    	<dt>减100元</dt>
+					<a href="#"><img src="images/sj01.jpg" /></a>
+					<p><a href="#">小米MIX 2S 8GB+256GB</a></p>
+					<p><a href="#" class="te">骁龙845 年度旗舰处理器，艺术品般...</a></p>
+				    <h2>3599元<span>3999元</span></h2元>
+			    </div>
+			    
+		</div>
+		<!--<script type="text/javascript">
+			$('#main4 .main_two:not(.main4_three)').mouseenter(function(){
+				$(this).css({'margin-top':'-3px','box-shadow':'5px 5px 5px #CCCCCC ,-5px -5px 5px #CCCCCC,5px -5px 5px #CCCCCC,-5px 5px 5px #CCCCCC'})
+				$('.main4_three').css("display",'block')
+				
+			})
+			$('#main4 div[class^=main4]:not(.main4_three)').mouseleave(function(){
+				$(this).css({'margin-top':'0','box-shadow':'0 0 0'})
+				$('.main4_three').css("display",'none')
+			})
+		</script>-->
+		<script type="text/javascript">
+			$mainT=$(".main4_two")
+			$mainT.hover(function(){
+			$(this).addClass("active")//.siblings().removeClass("active")
+			$('#main4 .active .main4_three').show().animate({height:66,top:230},100,function(){
+			})
+			},function(){
+				$(this).removeClass('active')
+			$('#main4 .main4_three').hide().animate({height:0,top:302},100,function(){
+			})
+			})
+			</script>
+		<!------------------------bottom----------------->
+		<div id="bottom_wrap">
+			<div id="bottom">
+				<div class="bottom_one">
+					<div class="bottom_two">
+							<a href="#"><img src="images/w_03.jpg"/></a>
+							<a href="#" class="a3">预约维修服务</a>
+					</div>
+					<div class="bottom_two">
+							<a href="#"><img src="images/w_05.jpg"/></a>
+							<a href="#" class="a3">7天无理由退货</a>
+					</div>
+					<div class="bottom_two">
+							<a href="#"><img src="images/w_07.jpg"/></a>
+							<a href="#" class="a3">15天免费替换</a>
+					</div>
+					<div class="bottom_two">
+							<a href="#"><img src="images/w_09.jpg"/></a>
+							<a href="#" class="a3">满150包邮</a>
+					</div>
+					<div class="bottom_two">
+							<a href="#"><img src="images/w_11.jpg"/></a>
+							<a href="#" class="a3">520余家售后网店</a>
+					</div>
+					
+				</div>
+				<div class="bottom_three">
+					<div class="bottom_four">
+						<h3> <a href="#">帮助中心</a></h3>
+						<p><a href="#">账户管理</a></p>
+						<p><a href="#">购物指南</a></p>
+						<p><a href="#">订单操作</a></p>
+					</div>
+					<div class="bottom_four">
+						<h3> <a href="#">服务支持</a></h3>
+						<p><a href="#">售后政策</a></p>
+						<p><a href="#">自助服务</a></p>
+						<p><a href="#">相关下载</a></p>
+					</div>
+					<div class="bottom_four">
+						<h3> <a href="#">线下门店</a></h3>
+						<p><a href="#">小米之家</a></p>
+						<p><a href="#">服务网点</a></p>
+						<p><a href="#">零售网点</a></p>
+					</div>
+					<div class="bottom_four">
+						<h3> <a href="#">关于小米</a></h3>
+						<p><a href="#">了解小米</a></p>
+						<p><a href="#">加入小米</a></p>
+						<p><a href="#">联系我们</a></p>
+					</div>
+					<div class="bottom_four">
+						<h3> <a href="#">关注我们</a></h3>
+						<p><a href="#">新浪微博</a></p>
+						<p><a href="#">小米部落</a></p>
+						<p><a href="#">官方微信</a></p>
+					</div>
+					<div class="bottom_four">
+						<h3> <a href="#">特色服务</a></h3>
+						<p><a href="#">F码通道</a></p>
+						<p><a href="#">礼物码</a></p>
+						<p><a href="#">防伪查询</a></p>
+					</div>
+					<div class="bottom_five">
+						<h3>400-100-5678</h3>
+						<p>周一至周日 8:00—18:00<br>(仅收市话费)</p>
+						<a href="#">
+							&#xe620;
+							24小时在线客服
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#bottom a').mouseenter(function(){
+				 Col = $(this).css('color')
+				$(this).css('color','orangered')
+			})
+			$('#bottom a').mouseleave(function(){
+				$(this).css('color',Col)
+			})
+		</script>
+		<div id="footer_wrap">
+			<div id="footer">
+				<div class="footer_one">
+					<div class="logo">
+						<a href="#"></a>
+					</div>
+					<div class="footer_two">
+						<ul>
+							<li><a href="#">小米商城</a></li>
+							<li><a href="#">MIUI</a></li>
+							<li><a href="#">米家</a></li>
+							<li><a href="#">米聊</a></li>
+							<li><a href="#">多看</a></li>
+							<li><a href="#">路由器</a></li>
+							<li><a href="#">米粉卡</a></li>
+							<li><a href="#">小米天猫店</a></li>
+							<li><a href="#">隐私政策</a></li>
+							<li><a href="#">问题反馈</a></li>
+							<li><a href="#" class="last">Select Region</a></li>
+						</ul>
+						<p>
+							&#xe765;mi.com 京ICP证 110507号 京ICP备10046444号 京公安网安备11010802020134号 京网文[2014]0059-0009号
+						</p>
+						<p>
+							违法和不良信息举报电话:185-0130-1238,本网站所列数据,除特殊说明,所有数据均出自我司实验室测试
+						</p>
+				    </div>
+					<div class="footer_three">
+						<a href="#">
+						</a>
+					</div>
+			    </div>
+				<p class="footer_four">
+					探索黑科技，小米为发烧而生
+				</p>
+			</div>
+			
+		</div>	
+		<script type="text/javascript">
+			$('#footer a').mouseenter(function(){
+				Col = $(this).css('color')
+				$(this).css('color','orangered')
+			})
+			$('#footer a').mouseleave(function(){
+				$(this).css('color',Col)
+			})
+		</script>
+		<script type="text/javascript">
+			var s = new Slider("slider1");
+			var oUl = document.getElementById('ul')
+			oUl.onmouseenter = function(){
+				oUl.style.backgrund = "red"
+			}
+			
+		</script>
+	</body>
+</html>
